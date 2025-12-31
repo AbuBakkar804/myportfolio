@@ -5,12 +5,6 @@ import path from "path";
 export default defineConfig({
   base: "/myportfolio/",
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
-  build: {
-    outDir: "docs",
-  },
+  resolve: { alias: { "@": path.resolve(__dirname, "src") } },
+  build: { outDir: "docs" },
 });
